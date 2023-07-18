@@ -25,7 +25,7 @@ public class BasicLinkedList {
     /**
      * 获取链表长度
      *
-     * @param head 链表头结点
+     * @param head 链表首结点
      * @return 链表长度
      */
     public static int getListLength(LinkedListNode head) {
@@ -41,13 +41,13 @@ public class BasicLinkedList {
     /**
      * 链表插入
      *
-     * @param head       链表头结点
+     * @param head       链表首结点
      * @param nodeInsert 待插入结点
      * @param position   待插入位置，从1开始
-     * @return 插入后得到的链表头结点
+     * @return 插入后得到的链表首结点
      */
     public static LinkedListNode insertNode(LinkedListNode head, LinkedListNode nodeInsert, int position) {
-        // head == null 时可认为 nodeInsert 为链表头结点
+        // head == null 时可认为 nodeInsert 为链表首结点
         if (head == null) {
             return nodeInsert;
         }
@@ -82,7 +82,7 @@ public class BasicLinkedList {
      * 通过数组初始化单向链表
      *
      * @param array 数据数组
-     * @return 链表头结点
+     * @return 链表首结点
      */
     public static LinkedListNode initLinkedList(int[] array) {
         LinkedListNode head = null, cur = null;
@@ -103,7 +103,7 @@ public class BasicLinkedList {
     /**
      * 打印链表
      *
-     * @param head 链表的头结点
+     * @param head 链表的首结点
      * @return 链表元素字符串，例：10 30 50 40 20
      */
     public static String printLinkedList(LinkedListNode head) {
